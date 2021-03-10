@@ -36,13 +36,17 @@ b = Val(InputBox("Введите число b", "Ввод числа"))
 c = Val(InputBox("Введите число c", "Ввод числа"))
 
 'Выполняем проверку условий;
-If a Mod b = 0 And a Mod c <> 0 Then
-    res = True
+If b = 0 Or c = 0 Then
+    MsgBox "Введены недопустимые значения (возникнет деление на 0), пожалуйста, попробуйте ещё раз"
 Else
-    res = False
+    'Выполняем проверку условий;
+    If a Mod b = 0 And a Mod c <> 0 Then
+        res = True
+    Else
+        res = False
+    End If
+    'Вывод результата
+    MsgBox res
 End If
-    
-'Вывод результата
-MsgBox res
 
 End Sub
