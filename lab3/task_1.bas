@@ -4,10 +4,13 @@ Sub var12()
 Dim x As Single, res As Single
 'Осуществим ввод значений;
 x = Val(InputBox("Введите число", "Ввод числа"))
-'Вычислим необходимое значение;
-res = (x ^ 2 - 7 * x + 10) / (x ^ 2 - 8 * x + 12)
-'Выведем результат на экран;
-MsgBox "Результат = " & Str(res)
+
+If x = 2 Or x = 6 Then
+    MsgBox "Функция не определена в данный точке"
+Else
+    res = (x ^ 2 - 7 * x + 10) / (x ^ 2 - 8 * x + 12)
+    MsgBox "Результат = " & Str(res)
+End If
 
 End Sub
 
