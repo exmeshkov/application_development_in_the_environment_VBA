@@ -4,9 +4,9 @@ Sub var12()
 Dim A() As Integer, max_dist(3) As Integer, min_dist(3) As Integer, i As Integer, j As Integer, n As Integer, ar As String
 
 
-1: n = InputBox("Введите размер массива, кратный двум", "Ввод данных")
+1: n = InputBox("Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°, РєСЂР°С‚РЅС‹Р№ РґРІСѓРј", "Р’РІРѕРґ РґР°РЅРЅС‹С…")
 If n Mod 2 <> 0 Then
-    MsgBox ("Ошбика. Повторите ввод")
+    MsgBox ("РћС€Р±РёРєР°. РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ")
     GoTo 1
 End If
 ReDim A(n)
@@ -42,7 +42,7 @@ For i = 0 To n - 1 Step 2
         End If
     Next
 Next
-MsgBox "Массив: " & ar & vbLf & "Максимальное расстоение между точками с индексами :" & Str(min_dist(0)) & "," & Str(min_dist(1)) & " и " & Str(min_dist(2)) & "," & Str(min_dist(3)) & vbLf & "Минимальное расстоение между точками с индексами :" & Str(max_dist(0)) & "," & Str(max_dist(1)) & " и " & Str(max_dist(2)) & "," & Str(max_dist(3))
+MsgBox "РњР°СЃСЃРёРІ: " & ar & vbLf & "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ СЂР°СЃСЃС‚РѕРµРЅРёРµ РјРµР¶РґСѓ С‚РѕС‡РєР°РјРё СЃ РёРЅРґРµРєСЃР°РјРё :" & Str(min_dist(0)) & "," & Str(min_dist(1)) & " Рё " & Str(min_dist(2)) & "," & Str(min_dist(3)) & vbLf & "РњРёРЅРёРјР°Р»СЊРЅРѕРµ СЂР°СЃСЃС‚РѕРµРЅРёРµ РјРµР¶РґСѓ С‚РѕС‡РєР°РјРё СЃ РёРЅРґРµРєСЃР°РјРё :" & Str(max_dist(0)) & "," & Str(max_dist(1)) & " Рё " & Str(max_dist(2)) & "," & Str(max_dist(3))
 
 End Sub
 
@@ -51,9 +51,9 @@ Sub var2()
 
 Dim A() As Integer, r As Double, i As Integer, ar As String
 
-1: n = InputBox("Введите размер массива, кратный двум", "Ввод данных")
+1: n = InputBox("Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°, РєСЂР°С‚РЅС‹Р№ РґРІСѓРј", "Р’РІРѕРґ РґР°РЅРЅС‹С…")
 If n Mod 2 <> 0 Then
-    MsgBox ("Ошбика. Повторите ввод")
+    MsgBox ("РћС€Р±РёРєР°. РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ")
     GoTo 1
 End If
 
@@ -70,5 +70,5 @@ If (A(i) ^ 2 + A(i + 1) ^ 2) ^ 0.5 > r Then
 End If
 Next
 
-MsgBox "Массив: " & ar & vbLf & "Минимальный радиус окружности, вмещающий все точки = " & Str(r)
+MsgBox "РњР°СЃСЃРёРІ: " & ar & vbLf & "РњРёРЅРёРјР°Р»СЊРЅС‹Р№ СЂР°РґРёСѓСЃ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё, РІРјРµС‰Р°СЋС‰РёР№ РІСЃРµ С‚РѕС‡РєРё = " & Str(r)
 End Sub
