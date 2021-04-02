@@ -3,12 +3,12 @@ Sub task_1()
 
 Dim a As Integer, b As Integer, c As Integer, d As Integer
 
-a = InputBox("Введите a")
-b = InputBox("Введите b")
-1: c = InputBox("Введите c")
-d = InputBox("Введите d")
+a = InputBox("В¬РІРµРґРёС‚Рµ a")
+b = InputBox("В¬РІРµРґРёС‚Рµ b")
+1: c = InputBox("В¬РІРµРґРёС‚Рµ c")
+d = InputBox("В¬РІРµРґРёС‚Рµ d")
 If c + d = 0 Then
-    MsgBox "Деление на ноль, повторите ввод"
+    MsgBox "Ж’РµР»РµРЅРёРµ РЅР° РЅРѕР»СЊ, РїРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ"
     GoTo 1
 End If
 

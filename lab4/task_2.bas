@@ -22,9 +22,9 @@ Sub var12()
 
 Dim x As Double, y As Double, z As Double, res As Double
 
-x = InputBox("Введите число x", "Ввод числа")
-y = InputBox("Введите число y", "Ввод числа")
-z = InputBox("Введите число z", "Ввод числа")
+x = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ x", "В¬РІРѕРґ С‡РёСЃР»Р°")
+y = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ y", "В¬РІРѕРґ С‡РёСЃР»Р°")
+z = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ z", "В¬РІРѕРґ С‡РёСЃР»Р°")
 
 MsgBox (max(x, y, z) ^ 2 - 2 ^ x * min(x, y, z)) / (Sin(2 * x) + max(x, y, z) / min(x, y, z))
 
@@ -34,17 +34,17 @@ Sub var4()
 
 Dim a As Double, b As Double, c As Double, d As Double
 
-a = InputBox("Введите число a", "Ввод числа")
-b = InputBox("Введите число b", "Ввод числа")
-c = InputBox("Введите число c", "Ввод числа")
-d = InputBox("Введите число d", "Ввод числа")
+a = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ a", "В¬РІРѕРґ С‡РёСЃР»Р°")
+b = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ b", "В¬РІРѕРґ С‡РёСЃР»Р°")
+c = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ c", "В¬РІРѕРґ С‡РёСЃР»Р°")
+d = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ d", "В¬РІРѕРґ С‡РёСЃР»Р°")
 
 If a = d Then
-    MsgBox "Число a равно числу d"
+    MsgBox "вЂћРёСЃР»Рѕ a СЂР°РІРЅРѕ С‡РёСЃР»Сѓ d"
 ElseIf b = d Then
-    MsgBox "Число b равно числу d"
+    MsgBox "вЂћРёСЃР»Рѕ b СЂР°РІРЅРѕ С‡РёСЃР»Сѓ d"
 ElseIf c = d Then
-    MsgBox "Число с равно числу d"
+    MsgBox "вЂћРёСЃР»Рѕ СЃ СЂР°РІРЅРѕ С‡РёСЃР»Сѓ d"
 Else
     MsgBox max(d - a, d - b, d - c)
 End If

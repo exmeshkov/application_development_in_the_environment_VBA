@@ -3,9 +3,9 @@ Sub var4()
 
 Dim x As Double, y As Double, z As Double
 
-x = InputBox("Введите число x", "Ввод числа")
-y = InputBox("Введите число y", "Ввод числа")
-z = InputBox("Введите число z", "Ввод числа")
+x = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ x", "В¬РІРѕРґ С‡РёСЃР»Р°")
+y = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ y", "В¬РІРѕРґ С‡РёСЃР»Р°")
+z = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ z", "В¬РІРѕРґ С‡РёСЃР»Р°")
 
 If x + y + z < 1 Then
     If x < y And x < z Then

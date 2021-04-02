@@ -3,9 +3,9 @@ Sub var12()
 
 Dim a As Double, b As Double, c As Double
 
-a = InputBox("Введите число a", "Ввод числа")
-b = InputBox("Введите число b", "Ввод числа")
-c = InputBox("Введите число c", "Ввод числа")
+a = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ a", "В¬РІРѕРґ С‡РёСЃР»Р°")
+b = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ b", "В¬РІРѕРґ С‡РёСЃР»Р°")
+c = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ c", "В¬РІРѕРґ С‡РёСЃР»Р°")
 
 If a = -b Or a = -c Or b = -c Then
     MsgBox True
@@ -19,9 +19,9 @@ Sub var1()
 
 Dim a As Double, b As Double, c As Double
 
-a = InputBox("Введите число a", "Ввод числа")
-b = InputBox("Введите число b", "Ввод числа")
-c = InputBox("Введите число c", "Ввод числа")
+a = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ a", "В¬РІРѕРґ С‡РёСЃР»Р°")
+b = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ b", "В¬РІРѕРґ С‡РёСЃР»Р°")
+c = InputBox("В¬РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ c", "В¬РІРѕРґ С‡РёСЃР»Р°")
 
 If a < 0 Then
     MsgBox a ^ 4
