@@ -39,7 +39,7 @@ ActiveDocument.Range.Text = ActiveDocument.Range.Text & "Максимальны�
 
 k = k - 1
 
-For i = 0 To n - 1
+For i = 0 To M - 1
     tmp = A(k, i)
     A(k, i) = A(max_index(0), i)
     A(max_index(0), i) = tmp
