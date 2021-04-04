@@ -45,11 +45,14 @@ For i = 0 To M - 1
     A(max_index(0), i) = tmp
 Next
 
+
+
 For j = 0 To n - 1
     tmp = A(j, k)
     A(j, k) = A(j, max_index(1))
     A(j, max_index(1)) = tmp
 Next
+
 
 ActiveDocument.Range.Text = ActiveDocument.Range.Text & "Новая матрица: " '
 
@@ -98,33 +101,34 @@ Next
 ActiveDocument.Range.Text = ActiveDocument.Range.Text & "Максимальный эл-т = " & Str(max) '
 
 
-ActiveDocument.Range.Text = ActiveDocument.Range.Text & "Новая матрица: " '
-st = ""
-For i = 0 To max_index(0) - 1
-    For j = 0 To max_index(1) - 1
-        If i <> max_index(0) Then
-            If j <> max_index(1) Then
+
+For i = 0 To n - 1
+    For j = 0 To n - 1
+        If i < max_index(0) Then
+            If j < max_index(1) Then
                 M(i, j) = A(i, j)
-                st = st + Str(M(i, j)) + "    "
+            ElseIf j > max_index(1) Then
+                M(i, j - 1) = A(i, j)
             End If
-        End If
-    Next
-    ActiveDocument.Range.Text = ActiveDocument.Range.Text & st '
-    st = ""
-Next
-
-For i = max_index(0) + 1 To n - 1
-    For j = max_index(1) + 1 To n - 1
-        If i <> max_index(0) Then
-            If j <> max_index(1) Then
+        ElseIf i > max_index(0) Then
+            If j < max_index(1) Then
+                M(i - 1, j) = A(i, j)
+            ElseIf j > max_index(1) Then
                 M(i - 1, j - 1) = A(i, j)
-                st = st + Str(M(i - 1, j - 1)) + "    "
             End If
         End If
+    Next
+Next
+            
+ActiveDocument.Range.Text = ActiveDocument.Range.Text & "Новая матрица: " '
+
+st = ""
+For i = 0 To n - 2
+    For j = 0 To n - 2
+        st = st + Str(M(i, j)) + "    "
     Next
     ActiveDocument.Range.Text = ActiveDocument.Range.Text & st '
     st = ""
 Next
-
 
 End Sub
